@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-export default ({ match, id, name, description, image, born, deceased }) => (
+export default ({   name, description, image, born, deceased }) => (
     <Fragment>
         <img src={image} alt={name}  style={{maxWidth: 300}}/>
 
@@ -12,9 +12,5 @@ export default ({ match, id, name, description, image, born, deceased }) => (
 
         <p>{description}</p>
 
-        <p>
-            the id is:
-            {id}
-        </p>
     </Fragment>
 );
